@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		
+		<script src="resources/libs/jquery/1.9.1/jquery.js"></script>
+		<script src="resources/libs/urlEncode.js"></script>
+		
+		<script src="js/control/selectionmain.js" ></script>
+		<script src="js/sparql/sparqlquery.js" ></script>
+		
+	</head>
+	<body>
+	<h4 style="color:green;">Exploratory Spatiotemporal Analysis</h4>
+		<form action="esta.html" method="get" name="form">
+			<table >
+				<tbody>
+					<tr style="vertical-align:top;">
+						<td>
+							Sparql endpoint:<br>
+							<input id="endpoint" type="text" value="http://localhost:8890/sparql" style="width:300px;" /></td>
+<!-- 							<input id="endpoint" type="text" value="http://localhost:8890/sparql" style="width:300px;"/></td> -->
+						<td>
+							Graph:<br>
+							<select id="graphlist" >
+								<option selected="selected" value="regionaldevelopment">Regional development</option>
+							 </select></td>
+					</tr>
+					<tr height="20px"></tr>
+					<tr style="vertical-align:top;">
+						<td>
+							Data type:<br>
+							<input id="datatype" type="radio" value="business" checked="checked" />Business data<br>
+							<input id="datatype" type="radio" value="statistics" />Statistics
+						</td>
+						<td>
+							Analysis type:<br>
+							<select id="analysistype" size="7">
+								<option value="barspace" selected>Bar chart - space analysis</option>
+								<option value="bartime">Bar chart - time analysis</option>
+								<option value="histogramspace">Histogram - space analysis</option>
+								<option value="histogramtime">Histogram - time analysis</option>
+								<option value="histogramindicator">Histogram - indicator analysis</option>
+								<option value="facetedspace">Faceted search - space analysis</option>
+								<option value="facetedtime">Faceted search - time analysis</option>
+								
+							</select></td>
+					</tr>
+					<tr height="20px"></tr>
+					<tr style="vertical-align:top;">
+						<td>
+							<input id="launch" type="image" src="resources/images/launch_d.png" disabled="disabled" name="launch" /></td>
+						<td>
+							<label id='error' style='color:red;visibility:hidden'>There was an error during communication with the sparql endpoint</label></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<p>
+			&nbsp;</p>
+	</body>
+</html>

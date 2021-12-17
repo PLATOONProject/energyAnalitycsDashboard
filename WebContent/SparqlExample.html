@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examples of usage - jQuery SPARQL</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="resources/libs/urlEncode.js"></script>
+    <!--script src="resources/libs/jquery.sparql.js"></script -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+
+    
+	<script src="js/sparql/sparqlquerydemo.js"></script>
+	<script>
+
+	</script>
+  </head>
+  <body>
+    <h1>Results</h1>
+    <textarea id="results" style="width:500px;height:300px">
+      Results will appear here.
+    </textarea>
+    
+    <br>
+
+    <select id="year" onchange="getYear()">
+    	<option value="2009" selected="selected" >2009</option>
+    	<option value="2010" >2010</option>
+    </select>
+    <select id="incentive" onchange="getIncentive()">
+    	<option value="Total" selected="selected" >Total</option>
+    	<option value="PT01" >PT01</option>
+    	<option value="PT02" >PT02</option>
+    	<option value="PT03" >PT03</option>
+    	<option value="PT04" >PT04</option>
+    	<option value="PT05" >PT05</option>
+    	<option value="PT06" >PT06</option>
+    	<option value="PT07" >PT07</option>
+    	<option value="PT08" >PT08</option>
+    	<option value="PT09" >PT09</option>
+    	<option value="PT010" >PT010</option>
+    	<option value="PT011" >PT011</option>
+    	<option value="PT012" >PT012</option>
+    	<option value="PT013" >PT013</option>
+    	<option value="PT014" >PT014</option>
+    	<option value="PT015" >PT015</option>
+    	<option value="PT016" >PT016</option>
+    	<option value="PT017" >PT017</option>
+    	<option value="PT018" >PT018</option>
+    	<option value="PT019" >PT019</option>
+    	<option value="PT020" >PT020</option>
+    </select>
+    
+    
+    <p><a id="run_sparql" href="#">Run Me</a></p>
+  </body>
+</html>

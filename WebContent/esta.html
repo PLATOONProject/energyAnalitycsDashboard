@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regional development incentives</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="resources/css/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
+	<link rel="stylesheet" href="resources/css/geoknow.css" />
+	
+    <script src="resources/libs/jquery/1.9.1/jquery.js"></script>
+	<script src="resources/libs/highstock/2.0.1/highstock.js"></script>
+	<script src="resources/libs/highstock/2.0.1/exporting.js"></script>
+	<script src="resources/libs/leaflet/0.7.2/leaflet.js"></script>
+	<script src="resources/libs/urlEncode.js"></script>
+	
+	<script src="js/geojson/geojson-data.js" ></script>
+</head>
+<body>
+	<b>Regional development incentives</b>
+	
+	<table>
+	<tr>
+	<td valign="top">
+	<p>
+      Year:
+      <select id="year" ></select>
+      Incentive aim:
+      <select id="incentive"></select>
+      
+	  <input type="button" id="explorecubeviz" value="Explore with CubeViz" />
+	  
+    </p>
+    <div id="map" style="width: 650px; height: 700px"></div>
+    </td>
+	<td valign="top">
+	
+	<p>
+		Geo granularity level
+	    <input type='button' id='geominus' value='-' style=' width:25px; height:25px;' />
+	    <input type='text' id='geoLevelLabel' style='width: 140px; height: 25 px; text-align: center;' value='Level 2' readonly/>
+	    <input type='button' id='geoplus' value='+' style=' width:25px; height:25px;' />
+	</p>
+	
+	Independent parameter:
+		<div class="toggle-btn-grp cssonly">
+		    <div><input type="radio" name="independentParameter" value="Geo" checked/><label class="toggle-btn">Geo</label></div>
+		    <div><input type="radio" name="independentParameter" value="Incentive" /><label class="toggle-btn">Incentive</label></div>
+		    <div><input type="radio" name="independentParameter" value="Time" /><label class="toggle-btn">Time</label></div>
+		</div>
+			      
+	<div id="highchartsbarsingle" style="vertical-align: top; min-width: 500px; height: 700px; margin: 0 auto" ></div>
+	<div id="highchartsbarmultiple" style="vertical-align: top; min-width: 600px; height: 700px; margin: 0 auto" ></div>
+	</td>
+	</tr>
+	</table>
+	
+
+	<script src="js/control/estamain.js" ></script>
+	<script src="js/sparql/sparqlquery.js" ></script>
+	<script src="js/map/rammap.js" ></script>
+	<script src="js/highcharts/charts.js" ></script>
+	<script src="js/highcharts/timechart.js" ></script>
+
+	
+</body>
+</html>

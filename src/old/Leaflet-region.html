@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Layers Control Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
+	<link rel="stylesheet" href="resources/css/geoknow.css" />
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="resources/libs/urlEncode.js"></script>
+    <script src="resources/libs/jquery.sparql.js"></script>
+	<script src="resources/js/geojson/geojson-region.js" ></script>
+	
+</head>
+<body onload="runSparql();">
+<h3>Total regional development incentives</h3>
+
+	<p>
+      Year:
+      <select id="year" onchange="setYear()">
+    	<option value="2009" selected="selected" >2009</option>
+    	<option value="2010" >2010</option>
+    	<option value="2011" >2011</option>
+    	<option value="2012" >2012</option>
+      </select>
+      Incentive aim:
+      <select id="incentive" onchange="setIncentive()">
+    	<option value="Total" selected="selected" >Total</option>
+    	<option value="PT01" >PT01</option>
+    	<option value="PT02" >PT02</option>
+    	<option value="PT03" >PT03</option>
+    	<option value="PT04" >PT04</option>
+    	<option value="PT05" >PT05</option>
+    	<option value="PT06" >PT06</option>
+    	<option value="PT07" >PT07</option>
+    	<option value="PT08" >PT08</option>
+    	<option value="PT09" >PT09</option>
+    	<option value="PT010" >PT010</option>
+    	<option value="PT011" >PT011</option>
+    	<option value="PT012" >PT012</option>
+    	<option value="PT013" >PT013</option>
+    	<option value="PT014" >PT014</option>
+    	<option value="PT015" >PT015</option>
+    	<option value="PT016" >PT016</option>
+    	<option value="PT017" >PT017</option>
+    	<option value="PT018" >PT018</option>
+    	<option value="PT019" >PT019</option>
+    	<option value="PT020" >PT020</option>
+    </select>
+      <a id="run_sparql" href="#">Run sparql</a>
+    </p>
+    
+	<div id="map" style="width: 1200px; height: 800px"></div>
+
+
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="resources/js/map/map-region.js" type="text/javascript"></script>
+
+	
+	
+	
+</body>
+</html>
+

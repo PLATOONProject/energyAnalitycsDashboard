@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+
+		<script src="resources/libs/jquery/1.9.1/jquery.js"></script>
+	</head>
+	<body>
+		<div id="highstockcontainer" style="height: 400px"></div>
+
+		<script src="resources/libs/highstock/2.0.1/highstock.js"></script>
+		<script src="resources/libs/highstock/2.0.1/exporting.js"></script>
+		<script src="js/highcharts/timechart.js" ></script>
+		<script>
+			var data = [
+				[Date.UTC(2009, 0, 0), 3.23],
+				[Date.UTC(2010, 0, 0), 3.28],
+				[Date.UTC(2011, 0, 0), 3.56],
+				[Date.UTC(2012, 0, 0), 3.90],
+				[Date.UTC(2013, 0, 0), 3.23]
+				];
+			createTimeChart('highstockcontainer', data, 'My title', 'My subtitle', 'My series name', 'column', 'Y');
+		</script>
+	</body>
+</html>
